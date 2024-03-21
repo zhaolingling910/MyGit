@@ -33,32 +33,17 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "你好 $name!",
+        text = "哈哈哈哈哈 $name!",
         modifier = modifier
     )
-    Text(
-        text = " 一月又一月",
-        modifier = modifier
-    )
+
 }
 
-@Composable
-fun Greetingon(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "你好 $name!",
-        modifier = modifier
-    )
-    Text(
-        text = " name",
-        modifier = modifier
-    )
-}
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     MyGitTheme {
-        Greeting("Android")
-        Greetingon("xixiix")
+        Greeting("主分支")
     }
 }
