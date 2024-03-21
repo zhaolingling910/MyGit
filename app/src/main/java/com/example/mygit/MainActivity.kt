@@ -13,8 +13,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.mygit.ui.theme.MyGitTheme
 
 
-
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +23,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    Greeting("你好他他他0000")
                 }
             }
         }
@@ -35,16 +33,32 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
+        text = "你好 $name!",
+        modifier = modifier
+    )
+    Text(
+        text = " 一月又一月",
         modifier = modifier
     )
 }
 
+@Composable
+fun Greetingon(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "你好 $name!",
+        modifier = modifier
+    )
+    Text(
+        text = " name",
+        modifier = modifier
+    )
+}
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     MyGitTheme {
         Greeting("Android")
+        Greetingon("xixiix")
     }
 }
